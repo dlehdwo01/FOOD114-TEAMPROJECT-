@@ -89,15 +89,14 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2>        
     </div>
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33; ">  👨‍👩‍👦‍👦 역할 분담 </h2>    
-    <details>
-        <summary><h3>😎이동재</h3></summary>            
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33; ">  👨‍👩‍👦‍👦 역할 분담 </h2>       
+        <h3>😎이동재</h3>            
         <ul>
-            <li> <h4>역할</h4>
+<!--             <li> <h4>역할</h4>
                 <ul>                    
                     <li>팀원 업무 분배, 팀원 코드 공동 수정, DB 설계</li>
                 </ul>
-            </li>  
+            </li>   -->
             <li><h4>작업 페이지</h4>
                 <ul>                    
                     <li>메인화면, 주문하기, 주문하기, 우리동네, 이벤트, 고객회원가입</li>
@@ -109,15 +108,13 @@
                 </ul>
             </li>
         </ul>
-    </details>
-    <details>
-        <summary><h3>😇김예지</h3></summary>
+        <h3>😇김예지</h3>
         <ul>            
-            <li><h4>역할</h4>
+<!--             <li><h4>역할</h4>
                 <ul>                    
                     <li>전반적인 CSS 디자인 구축</li>
                 </ul>
-            </li>  
+            </li>   -->
             <li><h4>작업 페이지</h4>
                 <ul>                    
                     <li>고객 로그인, 가게 정보 페이지, 가게 리뷰 페이지, 주문 및 결제 페이지, 마이페이지(주문내역, 리뷰목록), 사업자 메인화면</li>
@@ -129,15 +126,13 @@
                 </ul>
             </li>
         </ul>
-    </details>
-    <details>
-        <summary><h3>😊박승영</h3></summary>
+       <h3>😊박승영</h3>
         <ul>            
-            <li><h4>역할</h4>
+<!--             <li><h4>역할</h4>
                 <ul>                    
                     <li>프로젝트 아이디어 기획</li>
                 </ul>
-            </li>  
+            </li>   -->
             <li><h4>작업 페이지</h4>
                 <ul>                    
                     <li>마이페이지(내정보,비밀번호 변경, 주소지 관리), 사업자 공지사항</li>
@@ -149,15 +144,13 @@
                 </ul>
             </li>
         </ul>
-    </details>
-    <details>
-        <summary><h3>🐴박경빈</h3></summary>
+        <h3>🐴박경빈</h3>
         <ul>
-            <li><h4>역할</h4>
+<!--             <li><h4>역할</h4>
                 <ul>                    
                     <li>DB 샘플 데이터 삽입으로 웹사이트 생동감 부여</li>
                 </ul>
-            </li>  
+            </li>   -->
             <li><h4>작업 페이지</h4>
                 <ul>                    
                     <li>사업자 가게관리(리뷰관리), 마이페이지(리뷰 작성) </li>
@@ -169,15 +162,13 @@
                 </ul>
             </li>
         </ul>
-    </details>
-    <details>
-        <summary><h3>🐯이진순</h3></summary>
+       <h3>🐯이진순</h3>
         <ul>
-            <li><h4>역할</h4>
+<!--             <li><h4>역할</h4>
                 <ul>                    
                     <li>전반적인 API 기능 구현, DB 설계</li>
                 </ul>
-            </li>  
+            </li>   -->
             <li><h4>작업 페이지</h4>
                 <ul>                    
                     <li>지도로 찾기, 사업자 회원가입, 사업자 가게관리(상품등록, 상품조회/수정, 이벤트 관리, 판매 통계)</li>
@@ -189,14 +180,13 @@
                 </ul>
             </li>
         </ul>
-    </details>
     </div>
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  📑 페이지별 기능 </h2>      
     </div>
     <div style= "text-align:left;">   
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📌 프로젝트 기능 구현 </h2>       
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎇 프로젝트 후기 </h2>       
     </div>
     
    
