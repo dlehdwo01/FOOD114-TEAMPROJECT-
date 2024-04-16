@@ -62,29 +62,16 @@
           </div>
     </div>
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📕 발표 PPT </h2> <br>         
-       ###[ppt](https://github.com/dlehdwo01/GitHubFiles/raw/main/FOOD114-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pptx)
-       [Google](http://www.google.com "구글")
-    </div>
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📕 발표 PPT </h2> <br>   
+        <a href="https://github.com/dlehdwo01/GitHubFiles/raw/main/FOOD114-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pptx">FOOD114-PPT 다운로드</a>
+       </div>          
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2> <br>         
     </div>
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  📑 프로젝트 수행절차 </h2> <br>         
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  📑 페이지별 기능 </h2> <br>         
     </div>
-    <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 💡 주요 기능 </h2> <br>         
-        </div>
-        <h3>고객</h3>
-            <li>각 업체의 진행중인 이벤트들을 한눈에 볼 수 있는 페이지 구현</li>
-            <li>카카오 지도 API를 활용하여 지도에 음식점 핀 구현</li>
-        <li>주문 내역에 한하여 리뷰 작성 기능 구현 </li>
-        <li>카카오페이, 신용카드, 토스 등 결제 API를 활용한 결제 기능 구현</li>
-        <li>각 업체의 판매통계, 판매이력 확인이 가능한 페이지 구현</li>
-        <li>더 많은 고객에게 노출 되기 위한 배달 가능 거리를 직접 수정 가능</li>
-        <li></li>
-        <li></li>
-        <li></li>
+    <div style= "text-align:left;">   
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📌 프로젝트 기능 구현 </h2> <br>         
     </div>
