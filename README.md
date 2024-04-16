@@ -14,7 +14,27 @@
     <li>지도를 이용하여 보다 편리하게 업체 조회가 가능합니다</li>
     <li>업체에서는 본인의 가게를 등록하여 판매 상품 관리가 가능하고 이벤트를 등록하여 홍보효과도 기대 할 수 있습니다.</li>
     </div>
-    
+    <div style= "text-align:left;">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🗓 개발 기간 </h2>  
+        <ul>
+            <li> <h4>02/22 ~ 02/28</h4>
+                <ul>
+                    <li>프로젝트 기획 회의(일별 2시간)</li>
+                    <li>프로젝트 컨셉 및 DB 테이블 설계</li>
+                </ul>
+            </li>
+            <li> <h4>03/01 ~ 03/17</h4>
+                <ul>
+                    <li>프로젝트 개발 진행</li>                    
+                </ul>
+            </li>
+            <li> <h4>03/18 ~ 03/20</h4>
+                <ul>
+                    <li>각 페이지에서 개선할 점과 보완할 점 수정</li>                          
+                </ul>
+            </li>
+        </ul>
+    </div>    
 <div style= "text-align:left;"> 
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">  </div> 
     </div>
