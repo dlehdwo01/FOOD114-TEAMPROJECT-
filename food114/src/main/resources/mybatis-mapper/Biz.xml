@@ -149,7 +149,7 @@
 	<insert id="insertBizFile" parameterType="hashmap">
 		INSERT INTO
 		FOOD114_BIZ_FILE VALUES(null, #{bizId}, #{path}, #{fileName},
-		#{orgName}, #{fileSize}, #{etc}, null,"WAIT")
+		#{orgName}, #{fileSize}, #{etc}, null,"COMPLETE")
 	</insert>
 
 	<!-- 상태 COMPLETE, 삭제되지 않은 사진만 조회 -->

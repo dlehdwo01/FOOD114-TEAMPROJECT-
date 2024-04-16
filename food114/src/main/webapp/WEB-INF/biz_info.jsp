@@ -182,7 +182,7 @@ section {
 						<span class="viewInfo">
 							<template v-if="updateFlg">
 								<input type="file" id="file1" name="file1"
-									accept=".jpg, .png, .gif" @change="fnFileUpload">
+									accept=".jpg, .png, .gif" @change="fnBizFileView">
 							</template>
 							<div style="width: 400px; display: inline-block" v-if="!updateFlg">사진 변경을 위해서 하단에 정보 변경하기 버튼을 눌러주세요.</div>
 
@@ -472,6 +472,7 @@ section {
 							success : function(data) {
 								if (data.result == "success") {
 									alert("정보변경완료");
+									self.fnFileUpload();
 									location.href = "food114-biz-info.do";
 								} else {
 									alert("잠시 후 다시 시도해주세요. 해당 오류가 지속된다면 관리자에게 문의하세요.")
@@ -536,11 +537,23 @@ section {
 					// 파일업로드1
 					fnFileUpload : function() {
 						var self = this;
-						self.changeImgFlg = true;
+						
 						var form = new FormData();
-						form.append("file1", $("#file1")[0].files[0]);
-						form.append("bizId", self.sessionId);
-						self.upload(form);
+						var fileInput = document.getElementById('file1');
+					    if (fileInput.files.length > 0) {
+					        // 파일이 선택된 경우에만 FormData에 파일 추가
+					        form.append( "file1",  fileInput.files[0] );
+					    }
+					    form.append( "bizId",  self.sessionId);
+			   	     	
+			   	  		// 파일이 선택되었을 때만 업로드 실행
+			   	     	if (fileInput.files.length > 0) {
+			   	         	self.upload(form);
+			   	         	self.changeImgFlg = true;
+			   	     	} else {
+			   	         	// 파일이 선택되지 않았을 때 다른 동작 수행
+			   	         	return;
+			   	     	}
 					}
 					// 파일 업로드2
 					,
@@ -553,7 +566,7 @@ section {
 							contentType : false,
 							data : form,
 							success : function(response) {
-								self.fnBizFileView();
+								/* self.fnBizFileView(); */
 							}
 						});
 					},
@@ -574,7 +587,7 @@ section {
 						});
 					},
 					// 이미지만 새로고침
-					fnBizFileView : function() {
+					/* fnBizFileView : function() {
 						var self = this;
 						var nparmap = {
 							bizId : self.sessionId
@@ -593,6 +606,18 @@ section {
 								}
 							}
 						});
+					}, */
+					fnBizFileView : function(event) {
+						var self = this;
+						console.log(event);
+						var file = event.target.files[0];
+						var reader = new FileReader();
+						self.changeImgFlg = true;
+
+						reader.onload = function(e) {
+							self.bizFile.path = e.target.result;
+						};
+						reader.readAsDataURL(file);
 					},
 					validateName : function() {
 						// 영어, 숫자만 입력가능 정규식
@@ -609,7 +634,6 @@ section {
 					var self = this;
 					self.fnSelectAll();
 					self.fnBizView();
-
 				}
 			});
 </script>
