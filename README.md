@@ -72,6 +72,7 @@
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 💡 차별화된 기능 </h2> <br>         
         </div>
+        asdasdasdasdasda
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📌 프로젝트 기능 구현 </h2> <br>         
     </div>
