@@ -90,7 +90,8 @@
     </div>
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33; ">  👨‍👩‍👦‍👦 역할 분담 </h2>    
-        <h3>😎이동재</h3>
+    <details>
+        <summary><h3>😎이동재</h3></summary>            
         <ul>
             <li> <h4>역할</h4>
                 <ul>                    
@@ -108,7 +109,9 @@
                 </ul>
             </li>
         </ul>
-        <h3>😇김예지</h3>
+    </details>
+    <details>
+        <summary><h3>😇김예지</h3></summary>
         <ul>            
             <li><h4>역할</h4>
                 <ul>                    
@@ -126,7 +129,9 @@
                 </ul>
             </li>
         </ul>
-        <h3>😊박승영</h3>
+    </details>
+    <details>
+        <summary><h3>😊박승영</h3></summary>
         <ul>            
             <li><h4>역할</h4>
                 <ul>                    
@@ -144,7 +149,9 @@
                 </ul>
             </li>
         </ul>
-        <h3>🐴박경빈</h3>
+    </details>
+    <details>
+        <summary><h3>🐴박경빈</h3></summary>
         <ul>
             <li><h4>역할</h4>
                 <ul>                    
@@ -162,7 +169,9 @@
                 </ul>
             </li>
         </ul>
-        <h3>🐯이진순</h3>
+    </details>
+    <details>
+        <summary><h3>🐯이진순</h3></summary>
         <ul>
             <li><h4>역할</h4>
                 <ul>                    
@@ -180,6 +189,7 @@
                 </ul>
             </li>
         </ul>
+    </details>
     </div>
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  📑 페이지별 기능 </h2>      
