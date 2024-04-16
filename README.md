@@ -3,7 +3,7 @@
     </div>
     
 <div align="center">
-    <img src="https://github.com/dlehdwo01/TeamProject1-FOOD114/assets/153072974/b909a6bb-70d0-411c-91d6-394189d8ab95" style="width:800px;">
+    <img src="https://github.com/dlehdwo01/TeamProject1-FOOD114/assets/153072974/b841dedd-0e14-4cf8-9cd1-1459a6ebdb2e" style="width:800px;">
     </div> 
 <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;" align="center">  
     </div> 
