@@ -8,7 +8,7 @@
 <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;" align="center">  
     </div> 
 <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">💡 프로젝트 소개 </h2> <br>   
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">💡 프로젝트 소개 </h2>
     <li>FOOD114는 요식업체들의 이벤트들을 소개해주어 바쁜 현대인들의 식비를 조금이라도 줄일 수 있는 기회를 드리는 웹사이트입니다.</li>
     <li>고객이 주소를 지정하여 주변에서 일어나고 있는 이벤트들을 확인이 가능하며 희망하는 가게의 음식을 주문이 가능합니다</li>
     <li>주소를 지정하지 않고 지도를 이용하여 보다 편리하게 요식업체들의 조회가 가능합니다</li>
@@ -50,7 +50,7 @@
 
 
 <div style= "text-align:left;">
-    <h2 style="color: #282d33;"> 🛠️ 사용 언어 </h2> <br> 
+    <h2 style="color: #282d33;"> 🛠️ 사용 언어 </h2>
     <div style="margin: 0 auto; text-align: left;" align= "left"> <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white">
           <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=Vue.js&logoColor=white">
           <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
@@ -62,18 +62,47 @@
           </div>
     </div>
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📕 발표 PPT </h2> <br>   
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📕 발표 PPT </h2>  
         <a href="https://docs.google.com/presentation/d/1F4bodDgNgG5s8ovWm_vM8CS3e3GtrGpu/edit?usp=sharing&ouid=117668902424628902239&rtpof=true&sd=true">FOOD114-PPT</a>
        </div>          
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2> <br>         
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2>        
     </div>
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  📑 페이지별 기능 </h2> <br>         
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33; ">  👨‍👩‍👦‍👦 역할 분담 </h2>    
+        <h3>이동재</h3>
+        <ul>
+            <li>작업 페이지
+                <ul>                    
+                    <li>메인화면, 주문하기, 주문하기, 우리동네, 이벤트, 고객회원가입</li>
+                </ul>
+            </li>            
+            <li>구현 기능
+                <ul>                    
+                    <li>슬라이드, 가게 검색, 휴대폰 인증, 회원가입 중복 검사, 입력된 주소에 따른 배달 반경 내 가게 불러오기, 이벤트 목록 호출, 이벤트 품목 행사가 기재 </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>김예지</h3>
+        <ul>
+            <li>작업 페이지
+                <ul>                    
+                    <li>고객 로그인, 가게 정보 페이지, 가게 리뷰 페이지, 주문 및 결제 페이지, 마이페이지(주문내역, 리뷰목록)</li>
+                </ul>
+            </li>            
+            <li>구현 기능
+                <ul>                    
+                    <li> 중복 검사, 입력된 주소에 따른 배달 반경 내 가게 불러오기, 이벤트 목록 호출, 이벤트 품목 행사가 기재슬라이드, 가게 검색, 휴대폰 인증, 회원가입 </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div style= "text-align:left;">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  📑 페이지별 기능 </h2>      
     </div>
     <div style= "text-align:left;">   
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📌 프로젝트 기능 구현 </h2> <br>         
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📌 프로젝트 기능 구현 </h2>       
     </div>
     
    
