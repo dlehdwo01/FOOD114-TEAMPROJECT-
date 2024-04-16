@@ -27,23 +27,23 @@
             </tr>
             <tr>
                 <th>이동재</th>
-                <td></td>
+                <td>https://github.com/dlehdwo01</td>
             </tr>
             <tr>
                 <td>김예지</td>
-                <td></td>
+                <td>https://github.com/vvyejivv</td>
             </tr>
             <tr>
                 <td>박승영</td>
-                <td></td>
+                <td>https://github.com/javagigig</td>
             </tr>
             <tr>
                 <td>박경빈</td>
-                <td></td>
+                <td>https://github.com/Bin2been</td>
             </tr>
             <tr>
                 <td>이진순</td>
-                <td></td>
+                <td>https://github.com/lsssssssssssssss</td>
             </tr>
             </table>
         </div>
@@ -63,7 +63,8 @@
     </div>
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 📕 발표 PPT </h2> <br>         
-        ㅁㄴㅇ
+       ###[ppt](https://github.com/dlehdwo01/GitHubFiles/raw/main/FOOD114-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pptx)
+       [Google](http://www.google.com "구글")
     </div>
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2> <br>         
