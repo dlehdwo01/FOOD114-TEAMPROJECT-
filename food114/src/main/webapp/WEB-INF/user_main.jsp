@@ -129,12 +129,14 @@
 					</div>
 				</div>
 			</div>
-			<button id="scrollToTopBtn" style="position:fixed; bottom:0; right:0;">위로 가기</button>
+			<!-- <button id="scrollToTopBtn" style="position:fixed; bottom:25px; right:25px; display:none; background-color: #ededed; color:white; border-radius: 50%; padding: 20px; border: none; font-size: 20px; cursor:pointer;"></button> -->
+			<img src="../img/up.png" class="scrollToTopBtn" id="scrollToTopBtn" style="position:fixed; bottom:25px; right:25px; display:none;cursor:pointer;">
+			<!-- <img src="../img/colorUp.png" class="scrollToTopBtn" style="position:fixed; bottom:25px; right:25px;cursor:pointer;"> -->
 		</div>
 		<!-- 푸터 -->
 		<%@include file="food114_footer.jsp"%>
 	</div>
-
+	
 </body>
 </html>
 <script>
@@ -142,9 +144,9 @@
 window.addEventListener("scroll", function() {
     // 현재 스크롤 위치를 확인하여 버튼을 보이거나 숨깁니다.
     if (window.scrollY > 100) { // 예를 들어, 스크롤이 100px 이상 내려왔을 때
-        document.getElementById("scrollToTopBtn").style.display = "block";
+        document.querySelector(".scrollToTopBtn").style.display = "block";
     } else {
-        document.getElementById("scrollToTopBtn").style.display = "none";
+        document.querySelector(".scrollToTopBtn").style.display = "none";
     }
 });
 
