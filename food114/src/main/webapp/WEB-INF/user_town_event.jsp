@@ -505,10 +505,10 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 			  $.pageChange("/food114-town-event.do", self.map);
 			}, 50)	
 		  },
-		  'map.nowPage' : function(){
+		  /* 'map.nowPage' : function(){
 			  var self=this;
 			  $.pageChange("/food114-town-event.do", self.map);
-		  },
+		  }, */
 		  'map.order' : function(){
 			  var self=this;
 			  $.pageChange("/food114-town-event.do", self.map);

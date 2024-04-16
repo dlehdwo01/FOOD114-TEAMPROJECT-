@@ -456,9 +456,11 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 				if (status === kakao.maps.services.Status.OK) {
 					self.map.latitude = result[0].y;
 					self.map.longitude = result[0].x;
+					console.log("aa");
 				} else{
 					self.map.latitude = "";
 					self.map.longitude = "";
+					
 				}
 				};
 				geocoder.addressSearch(addr,callback);
@@ -519,18 +521,20 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 			}
 		},
 		watch: {
-		  'map.inputAddr': function(newVal, oldVal) {
+			'map.inputAddr': function(newVal, oldVal) {
+			    var self = this;
+			    self.map.nowPage = 1;
+			         self.convertAddressToCoordinates(self.map.inputAddr);
+			         setTimeout(function(){
+			        	 $.pageChange("/food114-foodfind.do", self.map);	 
+			         },50)
+			         
+			    
+			},
+		  /* 'map.nowPage' : function(){
 			  var self=this;
-			  self.map.nowPage=1;
-			  self.convertAddressToCoordinates(self.map.inputAddr);
-			  setTimeout(function(){
 			  $.pageChange("/food114-foodfind.do", self.map);
-			}, 50)	
-		  },
-		  'map.nowPage' : function(){
-			  var self=this;
-			  $.pageChange("/food114-foodfind.do", self.map);
-		  },
+		  }, */
 		  'map.order' : function(){
 			  var self=this;
 			  $.pageChange("/food114-foodfind.do", self.map);

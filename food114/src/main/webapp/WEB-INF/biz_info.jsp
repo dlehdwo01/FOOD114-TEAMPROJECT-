@@ -191,6 +191,7 @@ section {
 						<div class="mainImg">
 							<div style="position: relative; width: 100%; height: 100%;">
 								<img v-if="bizFile" :src="bizFile.path">
+								
 								<div
 									style="font-size: 12px; position: absolute; top: 90px; left: 20px;"
 									v-if="bizFile=='nothing'">현재 등록된 이미지가 없습니다.</div>
