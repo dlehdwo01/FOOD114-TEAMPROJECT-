@@ -86,7 +86,8 @@
         <a href="https://docs.google.com/presentation/d/1F4bodDgNgG5s8ovWm_vM8CS3e3GtrGpu/edit?usp=sharing&ouid=117668902424628902239&rtpof=true&sd=true">▶FOOD114 발표 PPT</a>
        </div>          
     <div style= "text-align:left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2>        
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🎞 시연 영상 </h2>    
+        <a href="https://www.youtube.com/watch?v=WK8oGLTJD_Y">▶FOOD114 시연영상</a>
     </div>
     <div style= "text-align:left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33; ">  👨‍👩‍👦‍👦 역할 분담 </h2>       
