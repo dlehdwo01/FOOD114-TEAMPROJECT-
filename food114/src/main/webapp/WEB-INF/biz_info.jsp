@@ -190,11 +190,12 @@ section {
 
 						<div class="mainImg">
 							<div style="position: relative; width: 100%; height: 100%;">
-								<img v-if="bizFile" :src="bizFile.path">
+								<img v-if="bizFile&&!changeImgFlg" :src="bizFile.path">
+								<img v-if="changeImgFlg" :src="src">
 								
 								<div
 									style="font-size: 12px; position: absolute; top: 90px; left: 20px;"
-									v-if="bizFile=='nothing'">현재 등록된 이미지가 없습니다.</div>
+									v-if="bizFile=='nothing'&&!changeImgFlg">현재 등록된 이미지가 없습니다.</div>
 								<div style="position: absolute; bottom: -15px; left: 70px; font-size:13px; color:#9E9E9E;">300x300</div>
 							</div>
 						</div>
@@ -365,6 +366,7 @@ section {
 					closeHour : "",
 					closeMinute : "",
 					changeImgFlg : false, //이미지 변경 여부
+					src :"",
 					email : "",
 					emailAddr : "",
 					phoneConfirmNum : "1234", //인증번호
@@ -616,6 +618,7 @@ section {
 
 						reader.onload = function(e) {
 							self.bizFile.path = e.target.result;
+							self.src=e.target.result;
 						};
 						reader.readAsDataURL(file);
 					},
