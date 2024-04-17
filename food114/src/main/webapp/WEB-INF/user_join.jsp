@@ -190,7 +190,7 @@ select {
 						<th>휴대폰<span class="star">*</span></th>
 						<td><input type="text" placeholder="'-'를 제외한 휴대폰 번호를 입력해주세요."
 								v-model="userInfo.phone" id="phoneInput">							
-							<div hidden class="certificateInput">
+							<div  class="certificateInput" v-if="phoneChangeFlg">
 								<input type="text" placeholder="인증번호를 입력해주세요."
 									style="width: 200px;" v-model="certificateInput">
 								<button @click="fnPhoneConfirm">확인</button>
@@ -198,8 +198,8 @@ select {
 							<div class="errorMessage" v-html="phoneCheckMessage"
 								:style="{color : phoneCheckFlg ? 'blue' : 'red'}"></div></td>
 						<td style="padding: 0px;">
-							<button @click="fnPhoneCheck()" id="phoneConfirmBtn">인증문자받기</button>
-							<button @click="fnPhoneChange()" hidden class="certificateInput">번호변경</button>
+							<button @click="fnPhoneCheck()" id="phoneConfirmBtn" v-if="!phoneChangeFlg">인증문자받기</button>
+							<button @click="fnPhoneChange()" class="certificateInput" v-if="phoneChangeFlg">번호변경</button>
 						</td>
 					</tr>
 
@@ -353,7 +353,8 @@ select {
 					termsChecked : false,
 					privacyChecked : false,
 					offerChecked : false,
-					allChecked : false
+					allChecked : false,
+					phoneChangeFlg : false
 				},
 				methods : {
 					// 가입하기 버튼 클릭시
@@ -478,6 +479,7 @@ select {
 					// 휴대폰 인증문자받기
 					fnPhoneCheck : function() {
 						var self = this;
+						
 						let phone = /^(010|011)[0-9]{7,8}$/
 						if (!phone.test(self.userInfo.phone)) {
 							self.phoneCheckMessage = "휴대폰번호를 제대로 입력해주세요."
@@ -487,9 +489,9 @@ select {
 						$("#phoneInput").css({
 							"background-color" : "#cccccc4d"
 						})
-						$("#phoneConfirmBtn").prop("hidden", true);
+						/* $("#phoneConfirmBtn").prop("hidden", true); */
 						self.certificateNumber = "111111";
-						$(".certificateInput").prop("hidden",false);
+						 $(".certificateInput").prop("hidden",false);
 						
 
 						var nparmap = {
@@ -503,17 +505,22 @@ select {
 							success : function(data) {
 								self.certificateNumber = data.number;
 								$("#phoneInput").prop('disabled', true);
+								self.phoneChangeFlg=true;
+								self.phoneCheckMessage ="";
 							}
 						});
 					},
 					// 휴대폰 번호 변경 클릭
 					fnPhoneChange : function() {
 						var self = this;
-						$(".certificateInput").prop("hidden",true);
+						self.phoneChangeFlg=false;
 						$("#phoneInput").prop('disabled', false);
 						$("#phoneInput").css({
 							"background-color" : "white"
 						})
+						return;
+						$(".certificateInput").prop("hidden",true);
+						
 						
 					},
 					// 휴대폰 인증번호 입력 후 확인
