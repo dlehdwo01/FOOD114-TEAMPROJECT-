@@ -97,7 +97,7 @@ public class CustomerServiceImpl implements CustomerService {
 					if (!customer.getUseYn().equals("N") && customer.getLeaveTime() == null) {
 						// 세션 생성
 						resultMap.put("status", "success");
-						session.setAttribute("sessionId", customer.getUserId());
+						session.setAttribute("sessionId", customer.getUserId());						
 						session.setAttribute("userGrade", customer.getGrade());
 					}
 					if (customer.getUseYn().equals("N")) {

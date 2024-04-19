@@ -228,6 +228,7 @@
 					success : function(data) {
 						self.menuList = data.menuList;
 						self.eventStatus = data.eventStatus;
+						console.log(data);
 		
 					}
 				});
