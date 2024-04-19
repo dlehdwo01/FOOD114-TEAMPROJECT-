@@ -315,7 +315,7 @@
 												menuNo : self.clickMenu.menuNo
 											});
 					
-					console.log(self.totalPrice/self.cnt);
+					/* console.log(self.totalPrice/self.cnt); */
 					}
 				self.selectTotalPrice = self.fnTotalPrice(self.selectMenuList);
 				self.fnMenuClick('close',self.selectMenu);

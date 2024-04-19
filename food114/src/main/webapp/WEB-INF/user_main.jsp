@@ -8,7 +8,6 @@
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2/vue.min.js"></script>
 <!-- Vue.js 추가 -->
 <meta charset="UTF-8">
 <meta name="viewport"
@@ -130,14 +129,35 @@
 					</div>
 				</div>
 			</div>
+			<!-- <button id="scrollToTopBtn" style="position:fixed; bottom:25px; right:25px; display:none; background-color: #ededed; color:white; border-radius: 50%; padding: 20px; border: none; font-size: 20px; cursor:pointer;"></button> -->
+			<img src="../img/up.png" class="scrollToTopBtn" id="scrollToTopBtn" style="position:fixed; bottom:25px; right:25px; display:none;cursor:pointer;">
+			<!-- <img src="../img/colorUp.png" class="scrollToTopBtn" style="position:fixed; bottom:25px; right:25px;cursor:pointer;"> -->
 		</div>
 		<!-- 푸터 -->
 		<%@include file="food114_footer.jsp"%>
 	</div>
-
+	
 </body>
 </html>
 <script>
+//스크롤 이벤트 감지
+window.addEventListener("scroll", function() {
+    // 현재 스크롤 위치를 확인하여 버튼을 보이거나 숨깁니다.
+    if (window.scrollY > 100) { // 예를 들어, 스크롤이 100px 이상 내려왔을 때
+        document.querySelector(".scrollToTopBtn").style.display = "block";
+    } else {
+        document.querySelector(".scrollToTopBtn").style.display = "none";
+    }
+});
+
+window.onload = function() {
+    document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
 	var app = new Vue({
 		el : '#app',
 		data : {
