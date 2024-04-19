@@ -487,6 +487,7 @@ section {
 						var self = this;
 						self.fnBizView();
 						self.updateFlg = false;
+						self.changeImgFlg=false;
 					},
 					// 정보 변경하기 클릭시
 					fnInfoUpdate : function() {
