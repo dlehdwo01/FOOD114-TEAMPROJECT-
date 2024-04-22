@@ -100,7 +100,7 @@ public class ExampleController {
         Message message = new Message();
         // 발신번호 및 수신번호는 반드시 01012345678 형태로 입력되어야 합니다.
         String ranStr = randomMessage();
-        message.setFrom("01046548947");
+        message.setFrom("");
 		message.setTo((String)data.get("phone"));
         message.setText("인증번호 : " + ranStr);
 
