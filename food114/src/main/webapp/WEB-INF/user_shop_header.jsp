@@ -165,6 +165,7 @@
 				nowPage : ${map.nowPage},
 				latitude : "${map.latitude}",
 				longitude : "${map.longitude}",
+				addrNo : "${map.addrNo}",
 			}
 		},
 		methods : {
