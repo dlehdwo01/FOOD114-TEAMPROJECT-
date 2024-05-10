@@ -61,5 +61,8 @@ public interface CustomerMapper {
 	//주문완료
 	Order selectMyOrder(HashMap<String,Object> map);
 	
+	// 고객 default주소 가져오기
+	Addr selectUserDefaultAddr(HashMap<String,Object> map);
+	
 	
 }

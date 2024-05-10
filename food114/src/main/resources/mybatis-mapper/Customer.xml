@@ -29,6 +29,13 @@
 		FROM FOOD114_CONSUMER_ADDR
 		WHERE USERID=#{userId}
 	</select>
+	<select id="selectUserDefaultAddr" parameterType="hashmap"
+		resultType="teamProject.food114.model.Addr">
+		SELECT * 
+		FROM FOOD114_CONSUMER_ADDR
+		 WHERE USERID=#{userId} AND DEFAULTYN='Y';
+	</select>
+	
 	<select id="selectEmail" parameterType="hashmap"
 		resultType="teamProject.food114.model.Customer">
 		SELECT * FROM FOOD114_CONSUMER WHERE EMAIL=concat(#{email},"@",

@@ -51,4 +51,5 @@ public interface CustomerService {
 	// 주문완료창
 	HashMap<String, Object> searchMyOrder(HashMap<String, Object> map);
 	
+	
 }

@@ -99,6 +99,7 @@ public class CustomerServiceImpl implements CustomerService {
 						resultMap.put("status", "success");
 						session.setAttribute("sessionId", customer.getUserId());						
 						session.setAttribute("userGrade", customer.getGrade());
+						
 					}
 					if (customer.getUseYn().equals("N")) {
 						resultMap.put("status", "idle");
@@ -315,6 +316,7 @@ public class CustomerServiceImpl implements CustomerService {
 		}
 		return resultMap;
 	}
+
 
 	
 }

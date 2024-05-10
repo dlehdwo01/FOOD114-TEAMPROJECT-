@@ -100,7 +100,7 @@ public class BizController {
 	@RequestMapping("/food114-shop-info.do")
 	public String shopInfo(HttpServletRequest request, Model model, @RequestParam HashMap<String, Object> map)
 			throws Exception {
-		request.setAttribute("map", map);
+		request.setAttribute("map", map);		
 		System.out.println(map);
 		return "/user_shop_info";
 	}
@@ -109,7 +109,6 @@ public class BizController {
 	@RequestMapping("/food114-shop-event.do")
 	public String shopEvent(HttpServletRequest request, Model model, @RequestParam HashMap<String, Object> map)
 			throws Exception {
-		
 		request.setAttribute("map", map);
 		return "/user_shop_event";
 	}

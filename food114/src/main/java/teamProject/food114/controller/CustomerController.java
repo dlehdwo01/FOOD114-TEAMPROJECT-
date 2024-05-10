@@ -307,6 +307,7 @@ public class CustomerController {
 		return new Gson().toJson(resultMap);
 	}
 
+
 	// 로그아웃
 	@RequestMapping(value = "/logout.dox", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	@ResponseBody

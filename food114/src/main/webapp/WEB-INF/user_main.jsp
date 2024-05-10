@@ -172,7 +172,8 @@ window.onload = function() {
 				addrNo : "${map.addrNo}",
 				phone : "${map.phone}",
 				request : "${map.request}"
-			}
+			},
+			test : '${addr}'
 		},
 		methods : {
 			fnAlert : function(){
@@ -186,7 +187,7 @@ window.onload = function() {
 		},
 		created : function() {
 			var self = this;
-			
+			console.log(self.test);
 		},
 		mounted() {
 			new Swiper('.swiper', {

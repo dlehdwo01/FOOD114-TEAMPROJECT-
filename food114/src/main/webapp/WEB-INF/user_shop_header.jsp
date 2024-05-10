@@ -153,13 +153,18 @@
 			selectTab : '${map.selectTab}', /* 선택한 탭 */
 			bizId : "${map.bizId}",/* 가게 누른 파라미터값 불러와야함 */
 			bizInfo : {}, /* DB 가게정보  */
-			map : null,
+			mapp : null,
 			event : {}, /* 이벤트 정보 */
-			addrMap : {
+			map : {
 				inputAddr :"${map.inputAddr}", /* 주문하기에서 설정한 주소  */
 				detail :"${map.detail}", /* 주문하기에서 설정한 상세 주소  */
 				phone : "${map.phone}",
-				request :"${map.request}"
+				request :"${map.request}",
+				nowCategory : "${map.nowCategory}",
+				order : "${map.order}",
+				nowPage : ${map.nowPage},
+				latitude : "${map.latitude}",
+				longitude : "${map.longitude}",
 			}
 		},
 		methods : {
@@ -184,7 +189,7 @@
 			},
 			fnChangeTab : function(type){
 				var self = this;
-				var map = self.addrMap;				
+				var map = self.map;				
 				map["bizId"]=self.bizId;
 				map["selectTab"]=type;
 				
@@ -213,13 +218,13 @@
 		        // 지도 중심 위치 설정
 /* 		        self.map.setCenter(markerPosition); */
  				// 지도가 초기화되었을 때만 실행
-                if (self.map) {
-                    self.map.setCenter(markerPosition);
+                if (self.mapp) {
+                    self.mapp.setCenter(markerPosition);
                     var marker = new kakao.maps.Marker({
                         position: markerPosition,
                         image: markerImage
                     });
-                    marker.setMap(self.map);
+                    marker.setMap(self.mapp);
                 }
  
 		        // 마커 생성
@@ -228,13 +233,13 @@
 		            image: markerImage
 		        });
 		        // 마커를 지도에 표시
-		        marker.setMap(self.map);
+		        marker.setMap(self.mapp);
 		    }
 			
 		},
 		mounted() {
 			 updateMapOptionsWithCurrentLocation().then(mapOptions => {
-			        this.map = new kakao.maps.Map(this.$el.querySelector('#map'), mapOptions);
+			        this.mapp = new kakao.maps.Map(this.$el.querySelector('#map'), mapOptions);
 			        this.fnView();
 			    }).catch(error => {
 			        console.error('Failed to initialize map:', error.message);
