@@ -97,17 +97,17 @@ public class ExampleController {
      */
     @PostMapping("/send-one")
     public HashMap<String, Object> sendOne(Model model, @RequestParam HashMap<String, Object> data) {
-        Message message = new Message();
+//        Message message = new Message();
         // 발신번호 및 수신번호는 반드시 01012345678 형태로 입력되어야 합니다.
         String ranStr = randomMessage();
-        message.setFrom("");
-		message.setTo((String)data.get("phone"));
-        message.setText("인증번호 : " + ranStr);
+//        message.setFrom("");
+//		message.setTo((String)data.get("phone"));
+//        message.setText("인증번호 : " + ranStr);
 
-        SingleMessageSentResponse response = this.messageService.sendOne(new SingleMessageSendingRequest(message));
-        System.out.println(response);
+//        SingleMessageSentResponse response = this.messageService.sendOne(new SingleMessageSendingRequest(message));
+//        System.out.println(response);
         HashMap<String, Object> map = new HashMap<>();
-        map.put("response", response);
+//        map.put("response", response);
         map.put("number", ranStr);
         return map;
     }

@@ -162,11 +162,11 @@
 				request :"${map.request}",
 				nowCategory : "${map.nowCategory}",
 				order : "${map.order}",
-				nowPage : ${map.nowPage},
+				nowPage : '${map.nowPage}',
 				latitude : "${map.latitude}",
 				longitude : "${map.longitude}",
 				addrNo : "${map.addrNo}",
-			}
+			},
 		},
 		methods : {
 			fnView : function() {
@@ -204,7 +204,6 @@
 						/* self.selectTab = type; */
 						$.pageChange("/food114-shop-review.do", map);
 					}	
-				
 				
 			},
 		    setMapCenterAndAddMarker: function(latitude, longitude) {
@@ -249,7 +248,6 @@
 		created : function() {
 			var self = this;
 			self.fnView();
-			console.log("${map}");
 		}
 	});
 

@@ -489,7 +489,7 @@ select {
 						$("#phoneInput").css({
 							"background-color" : "#cccccc4d"
 						})
-						/* $("#phoneConfirmBtn").prop("hidden", true); */
+						$("#phoneConfirmBtn").prop("hidden", true);
 						self.certificateNumber = "111111";
 						 $(".certificateInput").prop("hidden",false);
 						
@@ -506,7 +506,8 @@ select {
 								self.certificateNumber = data.number;
 								$("#phoneInput").prop('disabled', true);
 								self.phoneChangeFlg=true;
-								self.phoneCheckMessage ="";
+								self.phoneCheckMessage =data.number;
+								
 							}
 						});
 					},
