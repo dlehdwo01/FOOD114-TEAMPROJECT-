@@ -11,7 +11,6 @@
     <div>1. 고객</div>
     <div>ID : test123</div>
     <div>PW : 1234</div>
-
     <div>2. 사업자</div>
     <div>ID : hi123</div>
     <div>PW : 1234qwer@@</div>
